@@ -1,0 +1,50 @@
+{% load static%}
+<style>
+    #grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+    }
+    #pic{
+        margin:30px;
+    }
+
+</style>
+
+<script>
+
+</script>
+
+<section>
+<!--사진 + 제품 이름 + 가격 + 사이즈/수량선택 + 장바구니 넣기-->
+    <div id="grid">
+        <span id="pic">
+        <img src="{% static 'img/01.jpg' %}" ></span>
+
+        제품명: 남성옷1<br>
+        <form>
+        가격: $40<br>
+        사이즈<select name="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select><br>
+        수량<select name="num">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option><br>
+        </select>
+        </form>
+
+        <span class="text-center"><a class="btn btn-outline-dark mt-auto" href="#!">ADD TO CART</a></span><br>
+
+        *5개 초과 주문시 판매자와 상의하세요
+        </span>
+    </div>
+
+<!--제품 상세 페이지-->
+
+
+</section>
